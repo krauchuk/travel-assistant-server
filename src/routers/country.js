@@ -31,13 +31,13 @@ router.get('/:id', (req, res) => {
     });
 
     const countryCities = cities.filter(city => {
-        return city.countryId === countryId;
+        return city.country.id === countryId;
     });
 
     const countryPopularCities = countryCities.slice(0, 3);
 
     const countryPopularPlaces = places.filter(place => {
-        return place.countryId === countryId;
+        return place.country.id === countryId;
     }).slice(0, 3);
 
     result.cities = {

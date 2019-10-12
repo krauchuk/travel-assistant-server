@@ -7,7 +7,10 @@ const data = [
         info: {
             description: 'Osaka Osaka Osaka Osaka',
         },
-        countryId: 3,
+        country: {
+            id: 3,
+            name: 'Japan',
+        },
     },
     {
         id: 5,
@@ -17,7 +20,10 @@ const data = [
         info: {
             description: 'Tokio Tokio Tokio Tokio',
         },
-        countryId: 3,
+        country: {
+            id: 3,
+            name: 'Japan',
+        },
     },
     {
         id: 4,
@@ -27,7 +33,10 @@ const data = [
         info: {
             description: 'Piter Piter Piter Piter',
         },
-        countryId: 2,
+        country: {
+            id: 2,
+            name: 'Russia',
+        },
     },
     {
         id: 8,
@@ -37,7 +46,10 @@ const data = [
         info: {
             description: 'Berlin Berlin Berlin Berlin',
         },
-        countryId: 4,
+        country: {
+            id: 4,
+            name: 'Germany',
+        },
     },
     {
         id: 3,
@@ -47,7 +59,10 @@ const data = [
         info: {
             description: 'Moscow Moscow Moscow Moscow',
         },
-        countryId: 2,
+        country: {
+            id: 2,
+            name: 'Russia',
+        },
     },
     {
         id: 9,
@@ -57,7 +72,10 @@ const data = [
         info: {
             description: 'Vilnus Vilnus Vilnus Vilnus',
         },
-        countryId: 5,
+        country: {
+            id: 5,
+            name: 'Lithuania',
+        },
     },
     {
         id: 2,
@@ -67,7 +85,10 @@ const data = [
         info: {
             description: 'Gomel Gomel Gomel Gomel',
         },
-        countryId: 1,
+        country: {
+            id: 1,
+            name: 'Belarus',
+        },
     },
     {
         id: 7,
@@ -77,7 +98,10 @@ const data = [
         info: {
             description: 'Munster Munster Munster Munster',
         },
-        countryId: 4,
+        country: {
+            id: 4,
+            name: 'Germany',
+        },
     },
     {
         id: 1,
@@ -87,7 +111,10 @@ const data = [
         info: {
             description: 'minsk minsk minsk minsk',
         },
-        countryId: 1,
+        country: {
+            id: 1,
+            name: 'Belarus',
+        },
     },
     {
         id: 10,
@@ -97,7 +124,10 @@ const data = [
         info: {
             description: 'Alytus Alytus Alytus Alytus',
         },
-        countryId: 5,
+        country: {
+            id: 5,
+            name: 'Lithuania',
+        },
     },
 ];
 

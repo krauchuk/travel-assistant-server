@@ -30,7 +30,7 @@ router.get('/:id', (req, res) => {
     });
 
     const cityPlaces = places.filter(place => {
-        return place.cityId === cityId;
+        return place.city.id === cityId;
     }); 
 
     const popularCityPlaces = cityPlaces.slice(0, 3);

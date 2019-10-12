@@ -22,8 +22,8 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
     const { id } = req.params;
 
-    const result = places.find(elem => {
-        return elem.id === parseInt(id, 10);
+    const result = places.find(place => {
+        return place.id === parseInt(id, 10);
     });
 
     res.send(result);

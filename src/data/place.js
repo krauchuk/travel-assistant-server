@@ -17,8 +17,14 @@ const data = [
             price: '75 EUR',
             address: 'Berlin moscow str',
         },
-        cityId: 8,
-        countryId: 4,
+        city: {
+            id: 8,
+            name: 'Berlin',
+        },
+        country: {
+            id: 4,
+            name: 'Germany',
+        },
     },
     {
         id: 5,
@@ -32,8 +38,14 @@ const data = [
             price: '50 JPY',
             address: 'Tokio central str',
         },
-        cityId: 5,
-        countryId: 3,
+        city: {
+            id: 5,
+            name: 'Tokio',
+        },
+        country: {
+            id: 3,
+            name: 'Japan',
+        },
     },
     {
         id: 4,
@@ -44,11 +56,17 @@ const data = [
         pic: '',
         info: {
             description: 'best Tokio park',
-            price: '500 JPY',
+            price: null,
             address: 'Tokio central str',
         },
-        cityId: 5,
-        countryId: 3,
+        city: {
+            id: 5,
+            name: 'Tokio',
+        },
+        country: {
+            id: 3,
+            name: 'Japan',
+        },
     },
     {
         id: 8,
@@ -62,8 +80,14 @@ const data = [
             price: '25 EUR',
             address: 'Berlin central str',
         },
-        cityId: 8,
-        countryId: 4,
+        city: {
+            id: 8,
+            name: 'Berlin',
+        },
+        country: {
+            id: 4,
+            name: 'Germany',
+        },
     },
     {
         id: 3,
@@ -77,8 +101,14 @@ const data = [
             price: null,
             address: 'Moscow lelins str',
         },
-        cityId: 3,
-        countryId: 2,
+        city: {
+            id: 3,
+            name: 'Moscow',
+        },
+        country: {
+            id: 2,
+            name: 'Russia',
+        },
     },
     {
         id: 9,
@@ -92,8 +122,14 @@ const data = [
             price: '20 EUR',
             address: 'Alytus central str',
         },
-        cityId: 10,
-        countryId: 5,
+        city: {
+            id: 10,
+            name: 'Alytus',
+        },
+        country: {
+            id: 5,
+            name: 'Lithuania',
+        },
     },
     {
         id: 2,
@@ -107,8 +143,14 @@ const data = [
             price: '8 BYN',
             address: 'gomel lelins str',
         },
-        cityId: 2,
-        countryId: 1,
+        city: {
+            id: 2,
+            name: 'Gomel',
+        },
+        country: {
+            id: 1,
+            name: 'Belarus',
+        },
     },
     {
         id: 7,
@@ -122,8 +164,14 @@ const data = [
             price: null,
             address: 'Berlin belarus str',
         },
-        cityId: 8,
-        countryId: 4,
+        city: {
+            id: 8,
+            name: 'Berlin',
+        },
+        country: {
+            id: 4,
+            name: 'Germany',
+        },
     },
     {
         id: 1,
@@ -137,8 +185,14 @@ const data = [
             price: null,
             address: 'misk lelins str',
         },
-        cityId: 1,
-        countryId: 1,
+        city: {
+            id: 1,
+            name: 'Minsk',
+        },
+        country: {
+            id: 1,
+            name: 'Belarus',
+        },
     },
     {
         id: 10,
@@ -152,8 +206,14 @@ const data = [
             price: '3 EUR',
             address: 'Alytus central str',
         },
-        cityId: 10,
-        countryId: 5,
+        city: {
+            id: 10,
+            name: 'Alytus',
+        },
+        country: {
+            id: 5,
+            name: 'Lithuania',
+        },
     },
 ];
 
