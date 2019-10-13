@@ -13,9 +13,21 @@ router.get('/', (req, res) => {
     const offset = (page - 1) * perPage;
     const limit = page * perPage;
 
+    let hasNext = false;
+    let hasPrev = false;
+
+    if(limit < cities.length) hasNext = true;
+    if(offset !== 0) hasPrev = true;
+
     const result = {
         all: cities.slice(offset, limit),
         popular: cities.slice(0, 3),
+    };
+
+    result.pagination = {
+        currentPage: +page,
+        hasNext,
+        hasPrev,
     };
 
     res.send(result);
