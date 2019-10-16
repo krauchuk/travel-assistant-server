@@ -37,19 +37,43 @@ router.get('/:id', (req, res) => {
     const { id } = req.params;
     const cityId = parseInt(id, 10);
 
+    let typesIdSet = new Set();
+
     const result = cities.find(city => {
         return city.id === cityId;
     });
 
     const cityPlaces = places.filter(place => {
-        return place.city.id === cityId;
-    }); 
+        if(place.city.id === cityId) {
+            typesIdSet.add(place.typeId);
+            return place;
+        }
+    });  
 
     const popularCityPlaces = cityPlaces.slice(0, 3);
+
+    const typesIdArr = [...typesIdSet];
+    let allTypesArr = [
+        {id: 1, name: 'Lodging'},
+        {id: 2, name: 'Attractions'},
+        {id: 3, name: 'Food'},
+    ];
+    let types = [];
+    if(typesIdArr.length > 1) {
+        types.push({id: 0, name: 'All'});
+        for(let i = 0; i < typesIdArr.length; i++) {
+            for(let j = 0; j < allTypesArr.length; j++) {
+                if(allTypesArr[j].id === typesIdArr[i]) {
+                    types.push(allTypesArr[j]);
+                }
+            }
+        }
+    }
 
     result.places = {
         popular: popularCityPlaces,
         all: cityPlaces,
+        types,
     };
     
     res.send(result);

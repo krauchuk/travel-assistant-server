@@ -1,5 +1,5 @@
 /* 
-typeId: 1 - hotel, hostel (housing)
+typeId: 1 - hotel, hostel (lodging)
 typeId: 2 - park, monument (attractions)
 typeId: 3 - restaurant, cafe (food)
 */
@@ -7,15 +7,15 @@ typeId: 3 - restaurant, cafe (food)
 const data = [
     {
         id: 6,
-        name: 'Berlin Restaurant',
+        name: 'Kin Dee',
         type: 'restaurant',
         typeId: 3,
         stars: 16,
-        pic: '',
+        pic: 'https://resizer.otstatic.com/v2/photos/large/25150819.jpg',
         info: {
-            description: 'best Berlin restaurant',
+            description: 'Part of the Grill Royal gourmet empire, Kin Dee has proven a worthy successor to Thai-Berliner institution Edd’s. Head chef and owner Dalad Kambhu strays into similar fusion territory, serving creative fine Thai cuisine with a focus on fresh, high-quality ingredients. With its set menu of small plates, excellent vegetarian options and a well-chosen wine list, Kin Dee has already won over the locals – and was awarded its first Michelin star in 2019.',
             price: '75 EUR',
-            address: 'Berlin moscow str',
+            address: 'Berlin, Lützowstraße 81',
         },
         city: {
             id: 8,
