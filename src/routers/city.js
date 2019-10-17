@@ -50,7 +50,7 @@ router.get('/:id', (req, res) => {
         }
     });  
 
-    const popularCityPlaces = cityPlaces.slice(0, 3);
+    const popularCityPlaces = cityPlaces.length ? cityPlaces.slice(0, 3) : null;
 
     const typesIdArr = [...typesIdSet];
     let allTypesArr = [
@@ -70,11 +70,9 @@ router.get('/:id', (req, res) => {
         }
     }
 
-    result.places = {
-        popular: popularCityPlaces,
-        all: cityPlaces,
-        types,
-    };
+    result.places = cityPlaces;
+    result.placesTypes =  types;
+    result.popularPlaces =  popularCityPlaces;
     
     res.send(result);
 });

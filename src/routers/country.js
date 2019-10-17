@@ -46,18 +46,15 @@ router.get('/:id', (req, res) => {
         return city.country.id === countryId;
     });
 
-    const countryPopularCities = countryCities.slice(0, 3);
+    const countryPopularCities = countryCities.length ? countryCities.slice(0, 3) : null;
 
     const countryPopularPlaces = places.filter(place => {
         return place.country.id === countryId;
     }).slice(0, 3);
 
-    result.cities = {
-        popular: countryPopularCities,
-        all: countryCities,
-    };
-
-    result.popularPlaces = countryPopularPlaces;
+    result.cities = countryCities;
+    result.popularCities = countryPopularCities;
+    result.popularPlaces = countryPopularPlaces.length ? countryPopularPlaces : null;
 
     res.send(result);
 });
