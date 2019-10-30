@@ -1,220 +1,160 @@
-/* 
+/*
 typeId: 1 - hotel, hostel (lodging)
 typeId: 2 - park, monument (attractions)
 typeId: 3 - restaurant, cafe (food)
 */
 
 const data = [
-    {
-        id: 6,
-        name: 'Kin Dee',
-        type: 'restaurant',
-        typeId: 3,
-        stars: 16,
-        pic: 'https://resizer.otstatic.com/v2/photos/large/25150819.jpg',
-        info: {
-            description: 'Part of the Grill Royal gourmet empire, Kin Dee has proven a worthy successor to Thai-Berliner institution Edd’s. Head chef and owner Dalad Kambhu strays into similar fusion territory, serving creative fine Thai cuisine with a focus on fresh, high-quality ingredients. With its set menu of small plates, excellent vegetarian options and a well-chosen wine list, Kin Dee has already won over the locals – and was awarded its first Michelin star in 2019.',
-            price: '75 EUR',
-            address: 'Berlin, Lützowstraße 81',
-        },
-        city: {
-            id: 8,
-            name: 'Berlin',
-        },
-        country: {
-            id: 4,
-            name: 'Germany',
-        },
+  {
+    id: 6,
+    name: 'Kin Dee',
+    type: 'restaurant',
+    typeId: 3,
+    stars: 16,
+    pic: 'https://resizer.otstatic.com/v2/photos/large/25150819.jpg',
+    info: {
+      description: 'Part of the Grill Royal gourmet empire, Kin Dee has proven a worthy successor to Thai-Berliner institution Edd’s. Head chef and owner Dalad Kambhu strays into similar fusion territory, serving creative fine Thai cuisine with a focus on fresh, high-quality ingredients. With its set menu of small plates, excellent vegetarian options and a well-chosen wine list, Kin Dee has already won over the locals – and was awarded its first Michelin star in 2019.',
+      price: '75 EUR',
+      address: 'Berlin, Lützowstraße 81',
     },
-    {
-        id: 5,
-        name: 'Tokio Restaurant',
-        type: 'restaurant',
-        typeId: 3,
-        stars: 12,
-        pic: '',
-        info: {
-            description: 'best Tokio restaurant',
-            price: '50 JPY',
-            address: 'Tokio central str',
-        },
-        city: {
-            id: 5,
-            name: 'Tokio',
-        },
-        country: {
-            id: 3,
-            name: 'Japan',
-        },
+    cityId: 8,
+    countryId: 4,
+  },
+  {
+    id: 5,
+    name: 'Tokio Restaurant',
+    type: 'restaurant',
+    typeId: 3,
+    stars: 12,
+    pic: '',
+    info: {
+      description: 'best Tokio restaurant',
+      price: '50 JPY',
+      address: 'Tokio central str',
     },
-    {
-        id: 4,
-        name: 'Central Tokio Park',
-        type: 'park',
-        typeId: 2,
-        stars: 10,
-        pic: '',
-        info: {
-            description: 'best Tokio park',
-            price: null,
-            address: 'Tokio central str',
-        },
-        city: {
-            id: 5,
-            name: 'Tokio',
-        },
-        country: {
-            id: 3,
-            name: 'Japan',
-        },
+    cityId: 5,
+    countryId: 3,
+  },
+  {
+    id: 4,
+    name: 'Central Tokio Park',
+    type: 'park',
+    typeId: 2,
+    stars: 10,
+    pic: '',
+    info: {
+      description: 'best Tokio park',
+      price: null,
+      address: 'Tokio central str',
     },
-    {
-        id: 8,
-        name: 'Berlin cafe',
-        type: 'cafe',
-        typeId: 3,
-        stars: 9,
-        pic: '',
-        info: {
-            description: 'best Berlin cafe',
-            price: '25 EUR',
-            address: 'Berlin central str',
-        },
-        city: {
-            id: 8,
-            name: 'Berlin',
-        },
-        country: {
-            id: 4,
-            name: 'Germany',
-        },
+    cityId: 5,
+    countryId: 3,
+  },
+  {
+    id: 8,
+    name: 'Berlin cafe',
+    type: 'cafe',
+    typeId: 3,
+    stars: 9,
+    pic: '',
+    info: {
+      description: 'best Berlin cafe',
+      price: '25 EUR',
+      address: 'Berlin central str',
     },
-    {
-        id: 3,
-        name: 'Central Moscow Park',
-        type: 'park',
-        typeId: 2,
-        stars: 7,
-        pic: '',
-        info: {
-            description: 'best Moscow park',
-            price: null,
-            address: 'Moscow lelins str',
-        },
-        city: {
-            id: 3,
-            name: 'Moscow',
-        },
-        country: {
-            id: 2,
-            name: 'Russia',
-        },
+    cityId: 8,
+    countryId: 4,
+  },
+  {
+    id: 3,
+    name: 'Central Moscow Park',
+    type: 'park',
+    typeId: 2,
+    stars: 7,
+    pic: '',
+    info: {
+      description: 'best Moscow park',
+      price: null,
+      address: 'Moscow lelins str',
     },
-    {
-        id: 9,
-        name: 'Alytus Hotel',
-        type: 'hotel',
-        typeId: 1,
-        stars: 6,
-        pic: '',
-        info: {
-            description: 'best Alytus hotel',
-            price: '20 EUR',
-            address: 'Alytus central str',
-        },
-        city: {
-            id: 10,
-            name: 'Alytus',
-        },
-        country: {
-            id: 5,
-            name: 'Lithuania',
-        },
+    cityId: 3,
+    countryId: 2,
+  },
+  {
+    id: 9,
+    name: 'Alytus Hotel',
+    type: 'hotel',
+    typeId: 1,
+    stars: 6,
+    pic: '',
+    info: {
+      description: 'best Alytus hotel',
+      price: '20 EUR',
+      address: 'Alytus central str',
     },
-    {
-        id: 2,
-        name: 'Hotel Gomel',
-        type: 'hotel',
-        typeId: 1,
-        stars: 5,
-        pic: '',
-        info: {
-            description: 'best Gomel hotel',
-            price: '8 BYN',
-            address: 'gomel lelins str',
-        },
-        city: {
-            id: 2,
-            name: 'Gomel',
-        },
-        country: {
-            id: 1,
-            name: 'Belarus',
-        },
+    cityId: 10,
+    countryId: 5,
+  },
+  {
+    id: 2,
+    name: 'Hotel Gomel',
+    type: 'hotel',
+    typeId: 1,
+    stars: 5,
+    pic: '',
+    info: {
+      description: 'best Gomel hotel',
+      price: '8 BYN',
+      address: 'gomel lelins str',
     },
-    {
-        id: 7,
-        name: 'Central Berlin park',
-        type: 'park',
-        typeId: 2,
-        stars: 4,
-        pic: '',
-        info: {
-            description: 'best Berlin park',
-            price: null,
-            address: 'Berlin belarus str',
-        },
-        city: {
-            id: 8,
-            name: 'Berlin',
-        },
-        country: {
-            id: 4,
-            name: 'Germany',
-        },
+    cityId: 2,
+    countryId: 1,
+  },
+  {
+    id: 7,
+    name: 'Central Berlin park',
+    type: 'park',
+    typeId: 2,
+    stars: 4,
+    pic: '',
+    info: {
+      description: 'best Berlin park',
+      price: null,
+      address: 'Berlin belarus str',
     },
-    {
-        id: 1,
-        name: 'Lenin monument in Minsk',
-        type: 'monument',
-        typeId: 2,
-        stars: 2,
-        pic: '',
-        info: {
-            description: 'Lenin monument',
-            price: null,
-            address: 'misk lelins str',
-        },
-        city: {
-            id: 1,
-            name: 'Minsk',
-        },
-        country: {
-            id: 1,
-            name: 'Belarus',
-        },
+    cityId: 8,
+    countryId: 4,
+  },
+  {
+    id: 1,
+    name: 'Lenin monument in Minsk',
+    type: 'monument',
+    typeId: 2,
+    stars: 2,
+    pic: '',
+    info: {
+      description: 'Lenin monument',
+      price: null,
+      address: 'misk lelins str',
     },
-    {
-        id: 10,
-        name: 'Alytus hostel',
-        type: 'hostel',
-        typeId: 1,
-        stars: 2,
-        pic: '',
-        info: {
-            description: 'best Alytus hostel',
-            price: '3 EUR',
-            address: 'Alytus central str',
-        },
-        city: {
-            id: 10,
-            name: 'Alytus',
-        },
-        country: {
-            id: 5,
-            name: 'Lithuania',
-        },
+    cityId: 1,
+    countryId: 1,
+  },
+  {
+    id: 10,
+    name: 'Alytus hostel',
+    type: 'hostel',
+    typeId: 1,
+    stars: 2,
+    pic: '',
+    info: {
+      description: 'best Alytus hostel',
+      price: '3 EUR',
+      address: 'Alytus central str',
     },
+    cityId: 10,
+    countryId: 5,
+  },
 ];
 
 module.exports = data;
